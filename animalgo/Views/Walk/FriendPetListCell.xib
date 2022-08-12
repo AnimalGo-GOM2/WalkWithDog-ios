@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendPetListCell" rowHeight="118" id="eed-oK-pii" customClass="FriendPetListCell" customModule="애니멀고_산책" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eed-oK-pii" id="yER-ve-tlq">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="NIf-wF-Nbl">
+                        <rect key="frame" x="20" y="10" width="84" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="84" id="O8P-gz-hCi"/>
+                            <constraint firstAttribute="height" constant="84" id="RwS-Mt-2Xw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLa-MF-KQF">
+                        <rect key="frame" x="118" y="12" width="40" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="·" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sV-fZ-E3T">
+                        <rect key="frame" x="161" y="12" width="5" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="성별" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOB-cj-nqG">
+                        <rect key="frame" x="169" y="12" width="24.5" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나이 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qml-v4-TY8">
+                        <rect key="frame" x="118" y="54" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="999999"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="견종 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94I-cn-nDk">
+                        <rect key="frame" x="118" y="37" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="999999"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비글" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtJ-IV-q32">
+                        <rect key="frame" x="147" y="37" width="25" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="000000"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12살" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgG-7O-DI9">
+                        <rect key="frame" x="147" y="54" width="27" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="000000"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중성화 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4G-tG-THP">
+                        <rect key="frame" x="118" y="71" width="41" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="999999"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdP-pt-7q4">
+                        <rect key="frame" x="159" y="71" width="11" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="000000"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성격 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqZ-g8-hI6">
+                        <rect key="frame" x="194" y="54" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="999999"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="활동적" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpJ-gX-3XA">
+                        <rect key="frame" x="223" y="54" width="37" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="000000"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="훈련 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l04-jB-MXl">
+                        <rect key="frame" x="194" y="71" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="999999"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJg-CU-4jJ">
+                        <rect key="frame" x="223" y="71" width="10" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="000000"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="FFFFFF"/>
+                <constraints>
+                    <constraint firstItem="IqZ-g8-hI6" firstAttribute="leading" secondItem="QgG-7O-DI9" secondAttribute="trailing" constant="20" id="0mD-8d-ny4"/>
+                    <constraint firstItem="FOB-cj-nqG" firstAttribute="centerY" secondItem="CLa-MF-KQF" secondAttribute="centerY" id="8Jp-mk-fuu"/>
+                    <constraint firstItem="hpJ-gX-3XA" firstAttribute="leading" secondItem="IqZ-g8-hI6" secondAttribute="trailing" id="9gf-Et-s9h"/>
+                    <constraint firstItem="BJg-CU-4jJ" firstAttribute="leading" secondItem="l04-jB-MXl" secondAttribute="trailing" id="9mw-7a-nes"/>
+                    <constraint firstItem="l04-jB-MXl" firstAttribute="top" secondItem="IqZ-g8-hI6" secondAttribute="bottom" id="AHA-cU-mFc"/>
+                    <constraint firstItem="7sV-fZ-E3T" firstAttribute="leading" secondItem="CLa-MF-KQF" secondAttribute="trailing" constant="3" id="BfS-x4-5kG"/>
+                    <constraint firstItem="94I-cn-nDk" firstAttribute="leading" secondItem="NIf-wF-Nbl" secondAttribute="trailing" constant="14" id="Cgc-ZW-Ql2"/>
+                    <constraint firstItem="Qml-v4-TY8" firstAttribute="leading" secondItem="NIf-wF-Nbl" secondAttribute="trailing" constant="14" id="EcT-93-Nk0"/>
+                    <constraint firstItem="QgG-7O-DI9" firstAttribute="centerY" secondItem="Qml-v4-TY8" secondAttribute="centerY" id="FRZ-eM-ZSk"/>
+                    <constraint firstItem="l04-jB-MXl" firstAttribute="leading" secondItem="IqZ-g8-hI6" secondAttribute="leading" id="KTu-E8-skx"/>
+                    <constraint firstItem="FOB-cj-nqG" firstAttribute="leading" secondItem="7sV-fZ-E3T" secondAttribute="trailing" constant="3" id="Q0h-ZW-UmW"/>
+                    <constraint firstItem="CLa-MF-KQF" firstAttribute="top" secondItem="yER-ve-tlq" secondAttribute="top" constant="12" id="Qu2-bx-2g6"/>
+                    <constraint firstItem="TdP-pt-7q4" firstAttribute="centerY" secondItem="i4G-tG-THP" secondAttribute="centerY" id="SCW-2R-Udq"/>
+                    <constraint firstItem="IqZ-g8-hI6" firstAttribute="centerY" secondItem="Qml-v4-TY8" secondAttribute="centerY" id="SvE-ov-why"/>
+                    <constraint firstItem="hpJ-gX-3XA" firstAttribute="centerY" secondItem="IqZ-g8-hI6" secondAttribute="centerY" id="TIw-WH-yKf"/>
+                    <constraint firstItem="NIf-wF-Nbl" firstAttribute="top" secondItem="yER-ve-tlq" secondAttribute="top" constant="10" id="U6h-eW-Blt"/>
+                    <constraint firstAttribute="bottom" secondItem="NIf-wF-Nbl" secondAttribute="bottom" constant="10" id="Vp4-ET-ziw"/>
+                    <constraint firstItem="OtJ-IV-q32" firstAttribute="leading" secondItem="94I-cn-nDk" secondAttribute="trailing" id="YyM-4x-0Lp"/>
+                    <constraint firstItem="OtJ-IV-q32" firstAttribute="centerY" secondItem="94I-cn-nDk" secondAttribute="centerY" id="bmT-Np-dkJ"/>
+                    <constraint firstItem="TdP-pt-7q4" firstAttribute="leading" secondItem="i4G-tG-THP" secondAttribute="trailing" id="ch7-5H-v1S"/>
+                    <constraint firstItem="i4G-tG-THP" firstAttribute="top" secondItem="Qml-v4-TY8" secondAttribute="bottom" id="eZl-lC-69p"/>
+                    <constraint firstItem="94I-cn-nDk" firstAttribute="top" secondItem="CLa-MF-KQF" secondAttribute="bottom" constant="8" id="fKO-V3-Ae0"/>
+                    <constraint firstItem="7sV-fZ-E3T" firstAttribute="centerY" secondItem="CLa-MF-KQF" secondAttribute="centerY" id="jiE-Av-QdD"/>
+                    <constraint firstItem="QgG-7O-DI9" firstAttribute="top" secondItem="OtJ-IV-q32" secondAttribute="bottom" id="lWx-vp-Zpg"/>
+                    <constraint firstItem="i4G-tG-THP" firstAttribute="leading" secondItem="NIf-wF-Nbl" secondAttribute="trailing" constant="14" id="nEW-Rj-Iap"/>
+                    <constraint firstItem="CLa-MF-KQF" firstAttribute="leading" secondItem="NIf-wF-Nbl" secondAttribute="trailing" constant="14" id="nso-qH-GUE"/>
+                    <constraint firstItem="NIf-wF-Nbl" firstAttribute="leading" secondItem="yER-ve-tlq" secondAttribute="leading" constant="20" id="oTT-8e-J90"/>
+                    <constraint firstItem="QgG-7O-DI9" firstAttribute="leading" secondItem="Qml-v4-TY8" secondAttribute="trailing" id="tI7-wD-qVD"/>
+                    <constraint firstItem="BJg-CU-4jJ" firstAttribute="centerY" secondItem="l04-jB-MXl" secondAttribute="centerY" id="tbc-GH-3uU"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="ageLabel" destination="QgG-7O-DI9" id="baS-IG-Ykz"/>
+                <outlet property="breedLabel" destination="OtJ-IV-q32" id="u2v-gP-ty7"/>
+                <outlet property="neutralLabel" destination="TdP-pt-7q4" id="bnY-D4-44D"/>
+                <outlet property="personalityLabel" destination="hpJ-gX-3XA" id="PAP-nr-vQx"/>
+                <outlet property="petGenderLabel" destination="FOB-cj-nqG" id="9Cz-CY-73d"/>
+                <outlet property="petImageView" destination="NIf-wF-Nbl" id="vGx-7t-pz0"/>
+                <outlet property="petNameLabel" destination="CLa-MF-KQF" id="l9t-50-fsl"/>
+                <outlet property="trainedLabel" destination="BJg-CU-4jJ" id="49y-hX-Yic"/>
+            </connections>
+            <point key="canvasLocation" x="76.811594202898561" y="-32.8125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sample" width="4928" height="3264"/>
+        <namedColor name="000000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="999999">
+            <color red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

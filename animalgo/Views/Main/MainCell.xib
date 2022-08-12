@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MainCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MainCell" rowHeight="75" id="PjO-Wn-e2o" customClass="MainCell" customModule="RocateerKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PjO-Wn-e2o" id="VqE-kg-pe4">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLy-m8-bp3">
+                        <rect key="frame" x="20" y="16.5" width="374" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSt-8V-bKv">
+                        <rect key="frame" x="20" y="37.5" width="374" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zSt-8V-bKv" firstAttribute="leading" secondItem="VqE-kg-pe4" secondAttribute="leading" constant="20" id="9jW-xR-5bY"/>
+                    <constraint firstItem="yLy-m8-bp3" firstAttribute="bottom" secondItem="VqE-kg-pe4" secondAttribute="centerY" id="QER-kD-oeF"/>
+                    <constraint firstAttribute="trailing" secondItem="yLy-m8-bp3" secondAttribute="trailing" constant="20" id="SCD-lM-Ukx"/>
+                    <constraint firstItem="yLy-m8-bp3" firstAttribute="leading" secondItem="VqE-kg-pe4" secondAttribute="leading" constant="20" id="e3s-2D-m4s"/>
+                    <constraint firstAttribute="trailing" secondItem="zSt-8V-bKv" secondAttribute="trailing" constant="20" id="juo-Ke-ZHK"/>
+                    <constraint firstItem="zSt-8V-bKv" firstAttribute="top" secondItem="VqE-kg-pe4" secondAttribute="centerY" id="lgc-eK-dm9"/>
+                    <constraint firstAttribute="bottom" secondItem="zSt-8V-bKv" secondAttribute="bottom" constant="20" id="lyo-1R-iFr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descLabel" destination="zSt-8V-bKv" id="kWQ-yR-eQ5"/>
+                <outlet property="titleLabel" destination="yLy-m8-bp3" id="E7z-Mg-2Nd"/>
+            </connections>
+            <point key="canvasLocation" x="-336.23188405797106" y="67.96875"/>
+        </tableViewCell>
+    </objects>
+</document>

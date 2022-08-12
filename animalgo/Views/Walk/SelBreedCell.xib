@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelBreedCell" rowHeight="70" id="Fu2-gm-Om6" customClass="SelBreedCell" customModule="애니멀고_산책" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fu2-gm-Om6" id="IMW-Yc-ji9">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uez-hU-FfZ">
+                        <rect key="frame" x="20" y="0.0" width="374" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="L2h-Hl-KdC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal">
+                            <color key="titleColor" name="999999"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" name="000000"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="골든리트리버" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqE-t8-5Am">
+                        <rect key="frame" x="20" y="17.5" width="83.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" name="999999"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqq-J7-JZX">
+                        <rect key="frame" x="10" y="53" width="394" height="1"/>
+                        <color key="backgroundColor" name="EAE8E5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gQD-Dw-3GK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="FFFFFF"/>
+                <constraints>
+                    <constraint firstItem="gqq-J7-JZX" firstAttribute="leading" secondItem="IMW-Yc-ji9" secondAttribute="leading" constant="10" id="2W8-dv-nxV"/>
+                    <constraint firstItem="Uez-hU-FfZ" firstAttribute="top" secondItem="IMW-Yc-ji9" secondAttribute="top" id="B5K-Er-XJj"/>
+                    <constraint firstAttribute="bottom" secondItem="Uez-hU-FfZ" secondAttribute="bottom" id="IKE-Jj-5kn"/>
+                    <constraint firstAttribute="trailing" secondItem="Uez-hU-FfZ" secondAttribute="trailing" constant="20" id="PZL-8x-TDN"/>
+                    <constraint firstAttribute="trailing" secondItem="gqq-J7-JZX" secondAttribute="trailing" constant="10" id="Xbh-Nw-xiJ"/>
+                    <constraint firstItem="gqq-J7-JZX" firstAttribute="bottom" secondItem="Uez-hU-FfZ" secondAttribute="bottom" id="XqR-T2-K3s"/>
+                    <constraint firstItem="OqE-t8-5Am" firstAttribute="leading" secondItem="Uez-hU-FfZ" secondAttribute="leading" id="bm4-0Z-Ui7"/>
+                    <constraint firstItem="OqE-t8-5Am" firstAttribute="centerY" secondItem="Uez-hU-FfZ" secondAttribute="centerY" id="cxJ-eT-lm7"/>
+                    <constraint firstAttribute="bottom" secondItem="gqq-J7-JZX" secondAttribute="bottom" id="uUe-iL-QBp"/>
+                    <constraint firstItem="Uez-hU-FfZ" firstAttribute="leading" secondItem="IMW-Yc-ji9" secondAttribute="leading" constant="20" id="xJm-ko-Sdv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="breedButton" destination="Uez-hU-FfZ" id="FQX-65-e9j"/>
+                <outlet property="breedLabel" destination="OqE-t8-5Am" id="l05-xe-3og"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="83.035714285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="000000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="999999">
+            <color red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="EAE8E5">
+            <color red="0.9179999828338623" green="0.9100000262260437" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
